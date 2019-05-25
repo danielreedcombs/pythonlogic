@@ -4,6 +4,8 @@ meats=["chicken", "cow", "pig", "duck"]
 luna = ["luna", "not walked", "hungry"]
 frogdog = ["frog dog", "not walked", "hungry"]
 frogpuppy = ["frog puppy", "not walked", "hungry"]
+foofie = ["Daniel hates that", "Daniel likes that", "I dosent mind that", "Foof doesnt concern herself with such pea brain things"]
+daniel = ["The foof hates that", "Ruthanne likes that", "foofie dosent mind that", "Daniel doesnt think about that"]
 dogs= [luna, frogdog, frogpuppy]
 def primefunction(nums):
     for num in nums:
@@ -75,3 +77,32 @@ def okay_dog_caretaker(puppy):
     dogwalker(puppy)
 
 okay_dog_caretaker(frogpuppy)
+
+def opinion_generator(person,thing):
+    if thing == "traffic" and person == daniel:
+     print(daniel[2])
+    elif thing ==  "traffic" and person == foofie:
+     print(foofie[0])
+    elif thing == "luna" and person == foofie:
+        print(foofie[1])
+    elif thing == "luna" and person == daniel:
+        print(daniel[1])
+    elif thing == "work" and person == foofie:
+        print(foofie[1])
+    elif thing == "work" and person == daniel:
+        print(danie[0])
+    elif thing ==  "babies" and person == foofie:
+        print(foofie[1])
+    elif thing == "babies" and person == daniel:
+        print(daniel[2])
+    elif person == daniel:
+        print(daniel[3])
+    elif person == foofie:
+        print(foofie[3])
+    else:
+        print("i dont know that person")
+opinion_generator(daniel,"traffic")
+opinion_generator(foofie, "trafic")
+opinion_generator(foofie, "babies")
+opinion_generator(daniel, "luna")
+opinion_generator(foofie, "two chainz")
