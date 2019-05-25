@@ -7,12 +7,18 @@ frogpuppy = ["frog puppy", "not walked", "hungry"]
 foofie = ["Daniel hates that", "Daniel likes that", "I dosent mind that", "Foof doesnt concern herself with such pea brain things"]
 daniel = ["The foof hates that", "Ruthanne likes that", "foofie dosent mind that", "Daniel doesnt think about that"]
 dogs= [luna, frogdog, frogpuppy]
+boulders= {
+    "lrc" : "the shield",
+    "dayton" : "river dance",
+    "rocktown" : "golden harvest",
+    "horse pens 40" : "god module"
+}
 def primefunction(nums):
     for num in nums:
         if num < 5:
             print("this number is under 5, ",num)
         else:
-            print(f"this number is over 5, ", num)
+            print(f"this number is 5 or over, ", num)
 
 
 primefunction(nums)
@@ -107,4 +113,13 @@ opinion_generator(foofie, "babies")
 opinion_generator(daniel, "luna")
 opinion_generator(foofie, "two chainz")
 
-
+for boulder in boulders:
+    if boulder == "lrc":
+        print(boulder)
+    elif boulder == "rocktown":
+        boulder = {"middle creek" : "beaver 10"}
+        print(type(boulder))
+        print(boulder)
+    else:
+        print("these the real woods bo")
+    print(boulders)
