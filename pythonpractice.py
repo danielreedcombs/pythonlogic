@@ -106,3 +106,5 @@ opinion_generator(foofie, "trafic")
 opinion_generator(foofie, "babies")
 opinion_generator(daniel, "luna")
 opinion_generator(foofie, "two chainz")
+
+
